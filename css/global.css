@@ -1,4 +1,4 @@
-/* Include the custom font */
+/* Main layout */
 @font-face {
     font-family: 'GothamBook';
     src: url('https://jsrmb2c001.blob.core.windows.net/melbournevictory/fonts/GothamBook.ttf') format('truetype');
@@ -55,7 +55,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 0px 0px 10px 0px;
+    margin: 0 0 10px 0;
 }
 
 button {
@@ -66,11 +66,21 @@ button {
     cursor: pointer;
     width: 100%;
     border-radius: 5px;
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
 }
 
 button:hover {
     background-color: #777; 
+}
+
+/* Remove form unique component*/
+#api ul, #api ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.helpLink {
+    display: none;
 }
 
 /* Responsive adjustments */
