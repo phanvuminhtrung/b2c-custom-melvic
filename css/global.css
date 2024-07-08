@@ -7,14 +7,54 @@
 body {
     background-color: #031e2f; 
     font-family: 'GothamBook', Arial, sans-serif; 
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
+#header {
+    background: #031e2f;
+    padding: 40px 0 40px 0;
+}
+
+#logo {
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+/* API unified form */
 #api {
-    width: 400px;
-    margin: 100px auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 40px;
     background-color: white;
+    color: #031e2f;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0 0 5px 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0px 0px 10px 0px;
 }
 
 button {
@@ -23,8 +63,26 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #09304D;
+    background-color: #777; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    #api {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
 }
