@@ -43,6 +43,7 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 p {
@@ -80,9 +81,11 @@ button:hover {
 
     h1 {
         font-size: 1.5em;
+        font-weight: bold;
     }
 
     h2 {
         font-size: 1.2em;
+        font-weight: bold;
     }
 }
